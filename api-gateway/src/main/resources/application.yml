@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      server:
+        webflux:
+          routes:
+            - id: college-route
+              uri: lb://college-service      # lb = load balanced, name comes from Eureka
+              predicates:
+                - Path=/colleges/**
+            - id: student-route
+              uri: lb://student-service
+              predicates:
+                - Path=/students/**
+
+server:
+  port: 8080
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka

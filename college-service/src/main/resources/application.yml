@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: college-service
+  config:
+    # load the rest of the settings (port, database...) from the Config Server
+    import: "configserver:http://localhost:8888"
