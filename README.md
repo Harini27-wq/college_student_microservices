@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # College-Student Microservices (Java 21, Spring Boot 3.5)
 
 Start order (each in its own terminal, inside the module folder, run `mvn spring-boot:run`):
@@ -13,5 +12,4 @@ Test through the gateway:
 - GET  http://localhost:8080/students
 - GET  http://localhost:8080/students/1/details
 =======
-# college_student_microservices
->>>>>>> 28b46673e976ca53d1d1016db0d9b7584a2df870
+
